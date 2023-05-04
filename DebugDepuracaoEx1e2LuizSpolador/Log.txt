@@ -1,0 +1,24 @@
+Apr 27, 2023 9:08:02 PM Principal main
+INFO: Log de informação
+Apr 27, 2023 9:08:02 PM Principal main
+WARNING: Log de aviso
+Apr 27, 2023 9:08:02 PM Principal main
+SEVERE: Log severo
+Apr 27, 2023 9:08:02 PM Principal main
+INFO: 
+ O programa iniciou a Calculadora!
+Apr 27, 2023 9:08:20 PM Principal main
+INFO: 
+ O programa terminou as operações da calculadora com Resultado=1.0
+May 04, 2023 11:22:50 AM Principal main
+INFO: Log de informação
+May 04, 2023 11:22:50 AM Principal main
+WARNING: Log de aviso
+May 04, 2023 11:22:50 AM Principal main
+SEVERE: Log severo
+May 04, 2023 11:22:50 AM Principal main
+INFO: 
+ O programa iniciou a Calculadora!
+May 04, 2023 11:22:58 AM Principal main
+INFO: 
+ O programa terminou as operações da calculadora com Resultado igual a 11.0

@@ -1,0 +1,139 @@
+May 04, 2023 1:46:37 PM br.com.academia.TestaBancoDados main
+INFO: Log de informação
+May 04, 2023 1:46:37 PM br.com.academia.TestaBancoDados main
+WARNING: Log de aviso
+May 04, 2023 1:46:37 PM br.com.academia.TestaBancoDados main
+SEVERE: Log severo
+May 04, 2023 1:46:37 PM br.com.academia.TestaBancoDados main
+SEVERE: -----------------------
+May 04, 2023 1:46:37 PM br.com.academia.TestaBancoDados main
+SEVERE: 
+
+May 04, 2023 1:46:37 PM br.com.academia.TestaBancoDados main
+INFO: 
+ Banco iniciado!
+May 04, 2023 1:46:37 PM br.com.academia.TestaBancoDados main
+INFO: 
+ Banco conectado!
+May 04, 2023 1:46:58 PM br.com.academia.BancoDados exibirDados
+INFO: ID: 4, Nome: Paulo, Idade: 24
+May 04, 2023 1:46:58 PM br.com.academia.BancoDados exibirDados
+INFO: ID: 6, Nome: Greg, Idade: 28
+May 04, 2023 1:46:58 PM br.com.academia.BancoDados exibirDados
+INFO: ID: 8, Nome: Giba, Idade: 25
+May 04, 2023 1:46:58 PM br.com.academia.BancoDados exibirDados
+INFO: ID: 9, Nome: Luiz, Idade: 67
+May 04, 2023 1:47:11 PM br.com.academia.TestaBancoDados main
+INFO: 
+ id deletado: 6
+May 04, 2023 2:01:24 PM br.com.academia.TestaBancoDados main
+INFO: Log de informação
+May 04, 2023 2:01:24 PM br.com.academia.TestaBancoDados main
+WARNING: Log de aviso
+May 04, 2023 2:01:24 PM br.com.academia.TestaBancoDados main
+SEVERE: Log severo
+May 04, 2023 2:01:24 PM br.com.academia.TestaBancoDados main
+SEVERE: -----------------------
+May 04, 2023 2:01:24 PM br.com.academia.TestaBancoDados main
+SEVERE: 
+
+May 04, 2023 2:01:24 PM br.com.academia.TestaBancoDados main
+INFO: 
+ Banco iniciado!
+May 04, 2023 2:01:25 PM br.com.academia.TestaBancoDados main
+INFO: 
+ Banco conectado!
+May 04, 2023 2:02:31 PM br.com.academia.TestaBancoDados main
+INFO: Log de informação
+May 04, 2023 2:02:31 PM br.com.academia.TestaBancoDados main
+WARNING: Log de aviso
+May 04, 2023 2:02:31 PM br.com.academia.TestaBancoDados main
+SEVERE: Log severo
+May 04, 2023 2:02:31 PM br.com.academia.TestaBancoDados main
+SEVERE: -----------------------
+May 04, 2023 2:02:31 PM br.com.academia.TestaBancoDados main
+SEVERE: 
+
+May 04, 2023 2:02:31 PM br.com.academia.TestaBancoDados main
+INFO: 
+ Banco iniciado!
+May 04, 2023 2:02:31 PM br.com.academia.BancoDados conectar
+INFO: 
+ Banco conectado!
+May 04, 2023 2:04:16 PM br.com.academia.TestaBancoDados main
+INFO: Log de informação
+May 04, 2023 2:04:16 PM br.com.academia.TestaBancoDados main
+WARNING: Log de aviso
+May 04, 2023 2:04:16 PM br.com.academia.TestaBancoDados main
+SEVERE: Log severo
+May 04, 2023 2:04:16 PM br.com.academia.TestaBancoDados main
+INFO: 
+ Banco iniciado!
+May 04, 2023 2:04:16 PM br.com.academia.BancoDados conectar
+INFO: 
+ Banco conectado!
+May 04, 2023 2:04:29 PM br.com.academia.BancoDados exibirDados
+INFO: ID: 4, Nome: Paulo, Idade: 24
+May 04, 2023 2:04:29 PM br.com.academia.BancoDados exibirDados
+INFO: ID: 8, Nome: Giba, Idade: 25
+May 04, 2023 2:04:29 PM br.com.academia.BancoDados exibirDados
+INFO: ID: 9, Nome: Luiz, Idade: 67
+May 04, 2023 2:04:29 PM br.com.academia.BancoDados exibirDados
+INFO: ID: 10, Nome: carla, Idade: 54
+May 04, 2023 2:05:05 PM br.com.academia.BancoDados deletar
+INFO: 
+ deletado!
+May 04, 2023 2:05:05 PM br.com.academia.TestaBancoDados main
+INFO: 
+ id deletado: 8
+May 04, 2023 2:05:05 PM br.com.academia.BancoDados desconectar
+INFO: 
+ Banco desconectado!
+May 04, 2023 2:06:08 PM br.com.academia.TestaBancoDados main
+INFO: Log de informação
+May 04, 2023 2:06:08 PM br.com.academia.TestaBancoDados main
+WARNING: Log de aviso
+May 04, 2023 2:06:08 PM br.com.academia.TestaBancoDados main
+SEVERE: Log severo
+May 04, 2023 2:06:08 PM br.com.academia.TestaBancoDados main
+INFO: 
+ Banco iniciado!
+May 04, 2023 2:06:09 PM br.com.academia.BancoDados conectar
+INFO: 
+ Banco conectado!
+May 04, 2023 2:06:26 PM br.com.academia.BancoDados deletar
+INFO: 
+ deletado!
+May 04, 2023 2:06:26 PM br.com.academia.TestaBancoDados main
+INFO: 
+ id deletado: 4
+May 04, 2023 2:06:26 PM br.com.academia.BancoDados desconectar
+INFO: 
+ Banco desconectado!
+May 04, 2023 2:07:55 PM br.com.academia.TestaBancoDados main
+INFO: Log de informação
+May 04, 2023 2:07:55 PM br.com.academia.TestaBancoDados main
+WARNING: Log de aviso
+May 04, 2023 2:07:55 PM br.com.academia.TestaBancoDados main
+SEVERE: Log severo
+May 04, 2023 2:07:55 PM br.com.academia.TestaBancoDados main
+INFO: 
+ Banco iniciado!
+May 04, 2023 2:07:55 PM br.com.academia.BancoDados conectar
+INFO: 
+ Banco conectado!
+May 04, 2023 2:08:49 PM br.com.academia.BancoDados deletar
+INFO: 
+ deletado!
+May 04, 2023 2:08:49 PM br.com.academia.TestaBancoDados main
+INFO: 
+ id deletado: 10
+May 04, 2023 2:08:49 PM br.com.academia.BancoDados exibirDados
+INFO: ID: 6, Nome: asas, Idade: 5323
+May 04, 2023 2:08:49 PM br.com.academia.BancoDados exibirDados
+INFO: ID: 9, Nome: Luiz, Idade: 67
+May 04, 2023 2:08:49 PM br.com.academia.BancoDados exibirDados
+INFO: ID: 11, Nome: maria, Idade: 28
+May 04, 2023 2:08:49 PM br.com.academia.BancoDados desconectar
+INFO: 
+ Banco desconectado!

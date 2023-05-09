@@ -10,20 +10,21 @@
 <head>
     <meta charset="utf-8">
     <title>Produtos do Luiz e Daniel</title>
-    <link rel="icon" href="imagens/telefone.png">
+    <link rel="icon" href="imagens/icon.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>Produtos LD</h1>
-<a href="novo.html" class="botao1">Novo contato</a>
+<a href="novo.html" class="botao1">Novo produto</a>
 <table class="tabela">
     <thead>
     <tr>
         <th>Id</th>
+        <th>Código</th>
         <th>Nome</th>
-        <th>Telefone</th>
-        <th>E-mail</th>
-        <th>Opções</th>
+        <th>Categoria</th>
+        <th>Valor</th>
+        <th>Quantidade</th>
     </tr>
     </thead>
     <tbody>
@@ -41,7 +42,7 @@
         </td>
         <td><%=lista.get(i).getQuantidade()%>
         </td>
-        <td><a href="select?idcon=<%=lista.get(i).getId()%>" class="botao1">Editar</a>
+        <td><a href="select?id=<%=lista.get(i).getId()%>" class="botao1">Editar</a>
             <a href="javascript: confirmar(<%=lista.get(i).getId()%>)" class="botao2">Excluir</a>
         </td>
     </tr>

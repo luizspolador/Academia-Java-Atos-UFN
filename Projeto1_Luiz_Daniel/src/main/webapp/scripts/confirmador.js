@@ -1,7 +1,7 @@
-function confirmar(idcon) {
+function confirmar(id) {
     let resposta = confirm("Confirma a exclusão do contato?")
     if (resposta === true) {
-        //alert(idcon)
-        window.location.href = "delete?idcon=" + idcon
+        //alert(id)
+        window.location.href = "delete?id=" + id
     }
 }

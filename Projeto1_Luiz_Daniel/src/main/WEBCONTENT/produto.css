@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .tabela {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabela th,
+  .tabela td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabela th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .tabela td:last-child {
+    text-align: center;
+  }
+  
+  .botao1,
+  .botao2 {
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao1 {
+    background-color: #4CAF50;
+  }
+  
+  .botao2 {
+    background-color: #f44336;
+  }
+  
+  .botao1:hover,
+  .botao2:hover {
+    background-color: #3e8e41;
+  }
+  
+  .botao2:active {
+    background-color: #f44336;
+  }
+  

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Produtos do Luiz e Daniel</title>
+<link rel="icon" href="imagens/icon.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Criar novo produto</h1>
+	<form name="frmProduto" action="insert">
+		<table>
+			<tr>
+				<td><input type="number" name="codigo" placeholder="Código"
+					class="caixa1"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="nome" placeholder="Nome"
+					class="caixa1"></td>
+			</tr>
+
+			<tr>
+				<td><input type="text" name="categoria" placeholder="Categoria"
+					class="caixa2"></td>
+			</tr>
+
+			<tr>
+				<td><input type="number" name="valor" placeholder="Preço"
+					class="caixa1"></td>
+			</tr>
+			
+			<tr>
+				<td><input type="number" name="quantidade" placeholder="Quantidade"
+					class="caixa1"></td>
+			</tr>
+
+		</table>
+		<input type="submit" value="Adicionar" class="botao1"
+			onclick="validar()">
+	</form>
+	<script src="scripts/validador.js"></script>
+</body>
+</html>

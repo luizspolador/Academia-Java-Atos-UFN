@@ -1,18 +1,18 @@
 package br.com.projeto.model;
 
-public class JavaBeans {
+public class Produtos {
     private int id;
-    private int codigo;
+    private String codigo;
     private String nome;
     private String categoria;
-    private float valor;
-    private int quantidade;
+    private String valor;
+    private String quantidade;
 
-    public JavaBeans() {
+    public Produtos() {
         super();
     }
 
-    public JavaBeans(int id, int codigo, String nome, String categoria, float valor, int quantidade) {
+    public Produtos(int id, String codigo, String nome, String categoria, String valor, String quantidade) {
         this.id = id;
         this.codigo = codigo;
         this.nome = nome;
@@ -29,11 +29,11 @@ public class JavaBeans {
         this.id = id;
     }
 
-    public int getCodigo() {
+    public String getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
 
@@ -53,19 +53,19 @@ public class JavaBeans {
         this.categoria = categoria;
     }
 
-    public float getValor() {
+    public String getValor() {
         return valor;
     }
 
-    public void setValor(float valor) {
+    public void setValor(String valor) {
         this.valor = valor;
     }
 
-    public int getQuantidade() {
+    public String getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(int quantidade) {
+    public void setQuantidade(String quantidade) {
         this.quantidade = quantidade;
     }
 }

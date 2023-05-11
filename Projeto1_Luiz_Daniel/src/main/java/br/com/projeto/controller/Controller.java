@@ -1,7 +1,7 @@
 package br.com.projeto.controller;
 
 import br.com.projeto.model.DAO;
-import br.com.projeto.model.JavaBeans;
+import br.com.projeto.model.Produtos;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -14,7 +14,7 @@ public class Controller extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     DAO dao = new DAO();
-    JavaBeans produto = new JavaBeans();
+    Produtos produto = new Produtos();
 
     public Controller() {
         super();
@@ -41,7 +41,7 @@ public class Controller extends HttpServlet {
 
     // listar produtos
     protected void produtos(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        ArrayList<JavaBeans> lista = dao.listarDados();   // obj que recebe os dados de JavaBeans
+        ArrayList<Produtos> lista = dao.listarDados();   // obj que recebe os dados de JavaBeans
         request.setAttribute("produto", lista); // VERIFICAR!!!!!!!
         RequestDispatcher rd = request.getRequestDispatcher("produto.jsp");
         rd.forward(request, response);
@@ -50,11 +50,11 @@ public class Controller extends HttpServlet {
 
     protected void novoProduto(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // setando os parâmetros
-        produto.setCodigo(Integer.parseInt(request.getParameter("codigo")));
+        produto.setCodigo(request.getParameter("codigo"));
         produto.setNome(request.getParameter("nome"));
         produto.setCategoria(request.getParameter("categoria"));
-        produto.setValor(Float.parseFloat(request.getParameter("valor")));
-        produto.setQuantidade(Integer.parseInt(request.getParameter("quantidade")));
+        produto.setValor(request.getParameter("valor")); /// mudeeeei
+        produto.setQuantidade(request.getParameter("quantidade"));
 
         dao.inserirDados(produto);
 
@@ -76,12 +76,12 @@ public class Controller extends HttpServlet {
     }
 
     protected void editarProduto(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        produto.setId(Integer.parseInt(request.getParameter("id")));
-        produto.setCodigo(Integer.parseInt(request.getParameter("codigo")));
+        //produto.setId(Integer.parseInt(request.getParameter("id")));
+        produto.setCodigo(request.getParameter("codigo"));
         produto.setNome(request.getParameter("nome"));
         produto.setCategoria(request.getParameter("categoria"));
-        produto.setValor(Float.parseFloat(request.getParameter("valor")));
-        produto.setQuantidade(Integer.parseInt(request.getParameter("quantidade")));
+        produto.setValor(request.getParameter("valor"));
+        produto.setQuantidade(request.getParameter("quantidade"));
         dao.alterarDado(produto);
         // redireciona para produto.jsp e atualiza as alterações
         response.sendRedirect("main");

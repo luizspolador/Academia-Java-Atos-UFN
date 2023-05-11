@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #FFDAB9, #fff);
+}
+
+h1 {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFDAB9;
+    color: #000;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.tabela {
+    width: 1100px;
+}
+
+.tabela th,
+.tabela td {
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tabela td:last-child {
+    text-align: center;
+}
+
+.lista {
+    border: 1px solid #000;
+}
+
+.botao1,
+.botao2 {
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao1 {
+
+    background-color: #4CAF50;
+}
+
+.botao2 {
+    background-color: #f44336;
+}
+
+.botao1:hover,
+.botao2:hover {
+    background-color: #3e8e41;
+}
+
+.botaoCriar {
+    font-weight: bold;
+    margin: 0;
+    width: 190px;
+    height: 35px;
+    position: absolute;
+    top: 30%;
+    background-color: #4CAF50;
+    font-size: 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.botaoCriar:hover {
+    background-color: #4CAF59;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+td botao1,
+td botao2{
+    width: 5px;
+    padding: 0;
+}

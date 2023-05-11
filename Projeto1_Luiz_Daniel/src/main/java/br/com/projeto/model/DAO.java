@@ -27,27 +27,27 @@ public class DAO {
     }
 
     // create
-    public void inserirDados(JavaBeans contato) {
+    public void inserirDados(Produtos contato) {
         String create = "insert into produto (codigo, nome, categoria, valor, quantidade) values (?,?,?,?,?)"; // query
         try {
             Connection con = conectar(); // abrindo a conexão
             PreparedStatement pst = con.prepareStatement(create); // preparando a query create
-            pst.setInt(1, contato.getCodigo());   // trocando os ? pelo conteudo das variaveis
+            pst.setString(1, contato.getCodigo());   // trocando os ? pelo conteudo das variaveis
             pst.setString(2, contato.getNome());
             pst.setString(3, contato.getCategoria());
-            pst.setFloat(4, contato.getValor());
-            pst.setInt(5, contato.getQuantidade());
+            pst.setString(4, contato.getValor());
+            pst.setString(5, contato.getQuantidade());
 
             pst.executeUpdate();
             con.close(); // encerrando o banco
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println(e + "burro do caralho");
         }
     }
 
     // read
-    public ArrayList<JavaBeans> listarDados() {
-        ArrayList<JavaBeans> produtos = new ArrayList<>(); // objeto para acessar JavaBeans
+    public ArrayList<Produtos> listarDados() {
+        ArrayList<Produtos> produtos = new ArrayList<>(); // objeto para acessar JavaBeans
         String read = "select * from produto order by id";
         try {
             Connection con = conectar();
@@ -55,12 +55,12 @@ public class DAO {
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {  // laço para exibição dos dados
                 Integer id = rs.getInt(1);
-                Integer codigo = rs.getInt(2);
+                String codigo = rs.getString(2);
                 String nome = rs.getString(3);
                 String categoria = rs.getString(4);
-                float valor = rs.getFloat(5);
-                Integer quantidade = rs.getInt(6);
-                produtos.add(new JavaBeans(id, codigo, nome, categoria, valor, quantidade));    // adiciona o conteudo das variaveis
+                String valor = rs.getString(5);
+                String quantidade = rs.getString(6);
+                produtos.add(new Produtos(id, codigo, nome, categoria, valor, quantidade));    // adiciona o conteudo das variaveis
             }
             con.close();
             return produtos;
@@ -71,7 +71,7 @@ public class DAO {
     }
 
     //update
-    public void selecionarDados(JavaBeans produto) {
+    public void selecionarDados(Produtos produto) {
         String read2 = "select * from produto where id = ?";
         try {
             Connection con = conectar();
@@ -80,11 +80,11 @@ public class DAO {
             ResultSet rs = pst.executeQuery();
             while (rs.next()) { // setando variaveis JavaBeans
                 produto.setId(rs.getInt(1));
-                produto.setCodigo(rs.getInt(2));
+                produto.setCodigo(rs.getString(2));
                 produto.setNome(rs.getString(3));
                 produto.setCategoria(rs.getString(4));
-                produto.setValor(rs.getFloat(5));
-                produto.setQuantidade(rs.getInt(6));
+                produto.setValor(rs.getString(5));
+                produto.setQuantidade(rs.getString(6));
             }
             con.close();
         } catch (Exception e) {
@@ -93,17 +93,17 @@ public class DAO {
     }
 
     // edit
-    public void alterarDado(JavaBeans produto) {
+    public void alterarDado(Produtos produto) {
         String create = "update produto set codigo=?,nome=?,categoria=?,valor=?,quantidade=? where id=?";
         try {
             Connection con = conectar();
             PreparedStatement pst = con.prepareStatement(create);
-            pst.setInt(1, produto.getId());
-            pst.setInt(2, produto.getCodigo());
-            pst.setString(3, produto.getNome());
-            pst.setString(4, produto.getCategoria());
-            pst.setFloat(5, produto.getValor());
-            pst.setInt(6, produto.getQuantidade());
+            pst.setString(1, produto.getCodigo());
+            pst.setString(2, produto.getNome());
+            pst.setString(3, produto.getCategoria());
+            pst.setString(4, produto.getValor());
+            pst.setString(5, produto.getQuantidade());
+            pst.setInt(6, produto.getId());
             pst.executeUpdate();
             con.close();
         } catch (Exception e) {
@@ -112,7 +112,7 @@ public class DAO {
     }
 
     // remove
-    public void deletarDados(JavaBeans produto) {
+    public void deletarDados(Produtos produto) {
         String delete = "delete from produto where id=?";
         try {
             Connection con = conectar();

@@ -1,0 +1,286 @@
+/* referencia para criação da tabela: https://www.todamateria.com.br/tabela-periodica/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {     
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --escrita: black;
+    --branco-background: white;
+    --branco-inicio: #dee2e6;
+    --branco-borda: #ced4da;
+    --verde-naometal-background: #a1d344;
+    --verde-naometal-borda: #91bd3d;
+    --amarelo-metal-alcalino-background: #f1b200;
+    --amarelo-metal-alcalino-borda: #d8a000;
+    --amarelo-metal-terroso-background: #eada00;
+    --amarelo-metal-terosso-borda: #d2c400;
+    --vermelho-metal-transicao-background: #eb8e8e;
+    --vermelho-metal-transicao-borda: #d38080;
+    --azul-outro-metal-background: #a2c7d3;
+    --azul-outro-metal-borda: #91b3bd;
+    --azul-semi-metal-background: #4db6ac;
+    --azul-semi-metal-borda: #45a39a;
+    --azul-halogenio-background: #70cbeb;
+    --azul-halogenio-borda: #65b6d3;
+    --azul-gas-nobre-background: #3d9ee3;
+    --azul-gas-nobre-borda: #378ecc;
+    --azul-lantanideo-background: #90e3e9;
+    --azul-lantanideo-borda: #81ccd1;
+    --roxo-actinideo-background: #dcadd6;
+    --roxo-actinideo-borda: #c69bc0;
+}
+
+body { 
+    background-color: var(--branco-background);
+}
+
+.centralizado {  
+    text-align: center;
+}
+
+a {  
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {  
+    background-color: var(--branco-background);
+    width: 1200px;
+    margin: 0px auto;    
+}
+
+.tabela-titulo {  
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 25px 0;
+    background-color: var(--branco-inicio);
+}
+
+.tabela {  
+    display: flex;
+    flex-wrap: wrap;
+    width: 1170px;
+    margin: 20px 30px 20px 30px;
+}
+
+.separador {
+    height: 25px;
+    width: 100%;
+}
+
+.elemento { 
+    width: 55px;
+    height: 55px;
+    padding: 1px;
+    margin: 2px;
+    border-radius: 1px;
+    border: 1px solid;
+
+}
+
+.tabela-elementos-head{
+    border: 1px solid ;
+    border-color: var(--branco-borda);
+    background-color: var(--branco-background);
+}
+
+.elemento:hover { 
+    cursor: pointer;
+    -moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.vazio { 
+    border-color: rgba(0, 0, 0, 0);
+    cursor: inherit !important;
+}
+
+.numero-atomico { 
+    text-align: right;
+    font-size: .6em;
+}
+
+.simbolo { 
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.elemento .simbolo img {
+    margin-top: 7px;
+    width: 20px;
+}
+
+.nome-elemento { 
+    text-align: center;
+    font-size: .6em;
+}
+
+.massa { 
+    text-align: center;
+    font-size: .5em;
+    display: none;
+}
+
+.nao-metal {
+    background-color: var(--verde-naometal-background);
+    border-color: var(--verde-naometal-borda);
+}
+
+.metal-alcalino {
+    background-color: var(--amarelo-metal-alcalino-background);
+    border-color: var(--amarelo-metal-alcalino-borda);
+}
+
+.metal-alcalino-terroso {
+    background-color: var(--amarelo-metal-terroso-background);
+    border-color: var(--amarelo-metal-terosso-borda)
+}
+
+.metal-transicao {
+    background-color: var(--vermelho-metal-transicao-background);
+    border-color: var(--vermelho-metal-transicao-borda);
+}
+
+.outro-metal {
+    background-color: var(--azul-outro-metal-background);
+    border-color: var(--azul-outro-metal-borda);
+}
+
+.semimetal {
+    background-color: var(--azul-semi-metal-background);
+    border-color: var(--azul-semi-metal-borda);
+}
+
+.halogenio {
+    background-color: var(--azul-halogenio-background);
+    border-color: var(--azul-halogenio-borda);
+}
+
+.gas-nobre {
+    background-color: var(--azul-gas-nobre-background);
+    border-color: var(--azul-gas-nobre-borda);
+}
+
+.lantanideo {
+    background-color: var(--azul-lantanideo-background);
+    border-color: var(--azul-lantanideo-borda);
+}
+
+.actinidio {
+    background-color: var(--roxo-actinideo-background);
+    border-color: var(--roxo-actinideo-borda);
+}
+
+h2 {
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-align: center;
+    padding: 5px 0;
+    background-color: var(--branco-inicio);
+    border: 1px solid var(--branco-inicio);
+    width: 1000px;
+    margin: 50px auto 0 auto;
+    text-indent: 20px;
+}
+
+.legenda {
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--branco-borda);
+    width: 970px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: var(--branco-background);
+}
+
+.legenda-detalhes {
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    margin-right: 40px;    
+    border: 1px solid var(--branco-borda);
+    background-color: var(--branco-inicio);
+    position: relative;
+}
+
+.legenda-detalhes >.numero-atomico {
+    font-size: .8em;
+    margin: 8px;
+    line-height: 13px;
+}
+
+.legenda-detalhes > .simbolo{  /* simbolo é filho direto direto de legenda-detalhes */
+    font-size: 1.8em;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.legenda-detalhes > .nome-elemento {  
+    font-size: 1.1em;
+}
+
+.legenda-cor {
+    width: 800px;
+    font-size: .8em;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.legenda-cor ul {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.legenda-cor ul li {
+    list-style: none;
+    margin: 3px;
+}
+
+.quadrado-cor {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    border-radius: 3px;
+}
+
+table {
+    min-width: 1200px;
+    margin: 90px auto 20px auto;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-weight: 300;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 25px 0;
+}
+
+table th,
+table td {
+    padding: 15px 15px;
+}
+
+table thead {
+    background-color: var(--branco-background);
+    font-size: .8em;
+}
+
+table tbody tr {
+    border-bottom: 1px solid var(--branco-borda);
+    font-size: .8em;
+}

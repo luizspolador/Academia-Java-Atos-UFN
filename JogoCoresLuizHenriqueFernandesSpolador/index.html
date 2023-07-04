@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo de Cores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Jogo de Cores</h1>
+
+  <div class="status">
+    <p>Nível: <span id="level">1</span></p>
+    <p>Tempo: <span id="timer">3</span> segundos</p>  
+    <p class="status-pontuacao">Pontuação: <span id="score">0</span></p>
+  </div>
+  
+  
+  <div class="botao" id="game-container">
+    <h2 id="target-word"></h2>
+    <div id="button-container">
+      <button class="color-button red"></button>
+      <button class="color-button blue"></button>
+      <button class="color-button green"></button>
+      <button class="color-button yellow"></button>
+      <button class="color-button orange"></button>
+      <button class="color-button purple"></button>
+      <button class="color-button pink"></button>
+      <button class="color-button black"></button>
+      <button class="color-button white"></button>
+    </div>
+  </div>   
+  
+  <button id="start-button">Começar</button>
+  
+  <script src="game.js"></script>
+</body>
+</html>

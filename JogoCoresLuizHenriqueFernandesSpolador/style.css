@@ -1,0 +1,111 @@
+body {   
+    font-family: Arial, sans-serif;
+    background-color: lightslategray;
+  }
+  
+  h1 {
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .status{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+  }
+
+  #score{
+    color: rgb(104, 33, 24);
+  }
+
+  .status-pontuacao{
+    color: rgb(104, 33, 24);
+  }
+
+  .botao {
+    display: flex;
+    flex-direction: column; /*define em coluna e não no padrão linha */
+    align-items: center; /* centraliza os botões verticalmente */
+    text-align: center; /* centraliza os botões horizontalmente */
+    
+  }
+
+  #button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* dispõe em 4 colunas */
+    grid-gap: 35px; /* define um espaçamento entre os botões */
+    margin-top: 8px;
+  }
+  
+  .color-button {
+    width: 100px;
+    height: 65px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  
+  }
+  
+  .red {
+    background-color: red;
+    color: white;
+  }
+  
+  .blue {
+    background-color: blue;
+    color: white;
+  }
+  
+  .green {
+    background-color: green;
+    color: white;
+  }
+  
+  .yellow {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .orange {
+    background-color: orange;
+    color: white;
+  }
+  
+  .purple {
+    background-color: purple;
+    color: white;
+  }
+  
+  .pink {
+    background-color: palevioletred;
+    color: black;
+  }
+  
+  .black {
+    background-color: black;
+    color: white;
+  }
+  
+  .white {
+    background-color: white;
+    color: black;
+  }
+
+  #start-button {
+    display: block;
+    font-weight: bold;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    background-color: rgb(145, 205, 224); 
+    color: black;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
